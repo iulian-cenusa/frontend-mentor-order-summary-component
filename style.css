@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    margin: 1em;
+}
+
+@media (min-width: 375px) {
+
+    body {
+        background-image: url(./images/pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+        background-color: hsl(225, 100%, 94%);
+        background-size: 100%;
+    }
+
+    main{
+        width: 350px;
+        background-color: white;
+        border-radius: 10px;
+    }
+
+    #top img{
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    #bottom{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2em;
+    }
+
+    #bottom h1{
+        color: hsl(223, 47%, 23%);
+        font-size: 1.5em;
+        font-weight: 900;
+        margin: 0 0 1em 0;
+    }
+
+    #bottom p{
+        text-align: center;
+        color:  hsl(224, 23%, 55%);
+        margin: 0 0 1em 0;
+        font-weight: 500;
+        font-size: 1em;
+    }
+
+    #plan{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: hsl(225, 100%, 98%);
+        width: 100%;
+        padding: 1em;
+        border-radius: 10px;
+        margin: 0 0 1em 0;
+    }
+
+    #plan-middle{
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 0 1.5em;
+    }
+
+    #plan-middle span{
+        font-weight: 900;
+        font-size: 0.9em;
+        color: hsl(223, 47%, 23%);
+    }
+
+    #plan-middle p{
+        margin: 0;
+        font-size: 0.9em;
+        font-weight: 500;
+    }
+
+    #change{
+        margin: 0 0 0 3em;
+        font-size: 0.9em;
+        font-weight: 700;
+        color: hsl(245, 75%, 52%);
+        text-decoration: underline;
+    }
+
+    #change:hover{
+        text-decoration: none;
+        cursor: pointer;
+        color: hsl(245, 69%, 61%);
+    }
+
+    button{
+        height: 50px;
+        width: 100%;
+        color: hsl(225, 100%, 98%);
+        font-size: 1em;
+        font-weight: 700;
+        background-color: hsl(245, 75%, 52%);
+        border-radius: 10px;
+        border: none;
+        margin: 0 0 1em 0;
+    }
+
+    button:hover{
+        background-color:  hsl(245, 69%, 61%);
+        cursor: pointer;
+    }
+
+    #cancel{
+        color: hsl(224, 23%, 55%);
+        font-size: 0.9em;
+        font-weight: 900;  
+    }
+
+    #cancel:hover{
+        color: hsl(223, 47%, 23%);
+        cursor: pointer;
+    }
+
+}
+
+@media (min-width: 765px){
+    body {
+        background-image: url(./images/pattern-background-desktop.svg);
+        background-repeat: repeat-x;
+        background-color: hsl(225, 100%, 94%);
+    }
+}
